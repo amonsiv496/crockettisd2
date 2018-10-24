@@ -1,0 +1,670 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    list-style: none;
+}
+
+body {
+    display: block;
+}
+/*-------------------- Drop Menu Section ----------------*/
+#drop-menu-section{
+    display: none;
+    width: 100%;
+    text-align: right;
+    background-color: #032275;
+}
+#bars-container {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+#bar1, #bar2, #bar3 {
+    position: relative;
+    left: 10px;
+    top: 8px;
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+.change #bar1 {
+    transform: rotate(-45deg) translate(-5px, 11px);
+}
+.change #bar2 { opacity: 0; }
+
+.change #bar3 {
+    transform: rotate(45deg) translate(-1px, -7px);
+}
+#dropdown-menu-container {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.9s ease;
+    text-align: left;
+}
+#dropdown-menu-container a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+#dropdown-menu-container a:hover {
+    background-color: #012b9e;
+    border-bottom: 3px solid #ff653a;
+}
+ /* Display drop down menu and remove navigation tab*/
+@media screen and (max-width: 1216px){
+    #drop-menu-section {
+        display: block;
+    }
+    #header-section {
+        text-align: center;
+    }
+    #navigation-container {
+        display: none;
+    }
+}
+/*-------------------- END Drop Menu Section ------------*/
+
+/*-------------------- Header Section -------------------*/
+#header-section {
+    background-color: #0000cc;
+    display: inline-block;
+    width: 100%;
+}
+#header-section img {
+    height: 145px;
+    margin: 0px 0 0 90px;
+    transition: transform .5s;
+    overflow: hidden;
+}
+#header-section p {
+    display: inline-table;
+    position: relative;
+    bottom: 70px;
+    margin-left: 20px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 33px;
+    color: #FFF;
+    transition: transform .5s;
+    overflow: hidden;
+}
+#navigation-container {
+    margin-top: 50px;
+    float: right;
+}
+#navigation-container a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-family: 'PT Sans Caption', sans-serif;
+    color: #FFF;
+    font-size: 19px;
+}
+#navigation-container a:hover {
+    transition: 0.1s;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orange;
+}
+@media screen and (max-width: 1683px) {
+    #navigation-container {
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    #header-section img {
+        margin: 0;
+    }
+    #header-section p {
+        position: static;
+        display: block;
+    }
+}
+/*-------------------- END Header Section ---------------*/
+
+/*-------------------- Slideshow Section ---------------*/
+#slideshow-section {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+#left-button {
+    position: relative;
+    margin-bottom: 15%;
+}
+#right-button {
+    position: relative;
+    margin-bottom: 15%;
+}
+#sliders-section {
+    display: inline-block;
+    height: 25vw;
+    width: 70vw;
+}
+#sliders-section img {
+    height: 100%;
+    width: 100%;
+}
+.caption{
+    margin: 20px 0px;
+    color: white;
+    font-size: 1.3em;
+    font-family: 'Open Sans', sans-serif;
+}
+.caption {
+    display: none;
+}
+.slide {
+    display: none;  
+}
+.slide:nth-child(1){
+    display: block;
+}
+.caption:nth-child(2) {
+    display: block;
+}
+.animate-opacity {
+    animation-name: opacity-animation;
+    animation-duration: 2s;
+}
+@keyframes opacity-animation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@media screen and (max-width: 1000px) {
+    #left-button {
+        display: none;
+    }
+    #right-button {
+        display: none;
+    }
+    #sliders-section {
+        margin-top: 7px;
+        width: 95vw;
+        height: 48vw;
+    }
+    .caption { 
+        font-size: 1em;
+    }
+}
+/*-------------------- END Slideshow Section ---------------*/
+
+/*-------------------- Explore Section ---------------*/
+#explore-section {
+    margin: 40px 0px;
+    height: 220px;
+    width: 100%;
+    text-align: center;
+}
+#left-arrow-explore {
+    position: relative;
+    bottom: 90px;
+}
+#right-arrow-explore {
+    position: relative;
+    bottom: 90px;
+}
+#explore-slider-super-container {
+    display: inline-block;
+    margin-top: 16px;
+    height: 100%;
+    width: 80%;
+    text-align: left;
+    overflow: hidden;
+}
+#explore-slider-container {
+    width: 2300px;
+}
+.explore-icon-container {
+    display: inline-block;
+    margin-right: 65px;
+    height: 180px;
+    width: 150px;
+    border-radius: 5%;
+    background-color: #d0d6e0;
+    text-align: center;
+}
+.explore-icon-container:hover {
+    background-color: red;
+}
+.circle-background {
+    background-color: white;
+    margin: 25px auto 0px auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+#explore-slider-container img {
+    margin-top: 5px;
+    height: 90px;
+}
+.explore-icon-container figcaption {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: bold;
+    color: black;
+    margin-top: 6px;
+}
+@media screen and (max-width: 770px) {
+    .explore-icon-container {
+        height: 200px;
+        width: 140px;
+        margin-right: 6px;
+        margin-right: 0px;
+    }
+    .explore-icon-employee {
+        height: 200px;
+        width: 140px;
+    }
+    .icon-caption {
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 705px){
+    #left-arrow-explore {
+        display: none;
+    }
+    #right-arrow-explore {
+        display: none;
+    }
+    #explore-slider-super-container {
+        width: 98%;
+    }
+}
+/*-------------------- END Explore Section -----------*/
+
+/*---------------------- District News Section ----------------*/
+#district-news-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#district-news-container {
+    display: inline-table;
+    width: 840px;
+    margin-right: 30px;
+    margin-top: 35px;
+    text-align: left;
+}
+#news-icon {
+    height: 40px;
+}
+#district-news-container h1 {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: #3567b2;
+    display: inline-table;
+    position: relative;
+    bottom: 5px;
+    padding-left: 10px;
+    margin-bottom: 35px;
+}
+.news-container {
+    margin-bottom: 35px;
+    width: 100%;
+    height: 160px;
+    border-bottom: 2px dashed blue;
+}
+.district-news-photo-container {
+    height: 125px;
+    width: 280px;
+    display: inline-table;
+    overflow: hidden;
+}
+.district-news-photo {
+    height: 125px;
+    width: 280px;
+    transition: transform .5s;
+}
+.district-news-photo:hover {
+    transform: scale(1.2);
+}
+.news-descriptions {
+    display: inline-table;
+    margin-left: 15px;
+    width: 525px;
+    height: 115px;
+    position: relative;
+    bottom: 107px;
+}
+.news-descriptions h3 {
+    font-family: 'Arvo', sans-serif;
+    font-size: 18px;
+}
+.news-descriptions p {
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 15px;
+}
+.read-more-news {
+    position: absolute;
+    bottom: 0;
+    color: #ff0000;
+}
+.read-more-news:hover {
+    color: #2638ff;
+}
+.date-author {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#district-news-container-side-container {
+    text-align: left;
+    display: inline-table;
+    position: relative;
+    top: 7px;
+    width: 400px;
+    margin-left: 30px;
+}
+#district-news-container-side-container h5 {
+    color: orange;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+#district-news-container-side-container p {
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+    color: #FFF;
+}
+#motto {
+    background-color: #204070;
+    padding: 28px;
+    margin-bottom: 28px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#mission-statement {
+    background-color: #204070;
+    padding: 28px;
+    margin-bottom: 28px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#this-year-goals {
+    background-color: #204070;
+    padding: 30px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+@media screen and (max-width: 1025px) {
+    #district-news-container {
+        width: 100%;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 840px) {
+    .news-container {
+        position: static;
+        display: inline-table;
+        width: 100%;
+    }
+    .news-descriptions {
+        margin-left: 0;
+        margin-bottom: 20px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 769px) {
+    #district-news-container {
+        width: 600px;
+    }
+    #district-news-container h1{
+        margin: 0;
+    }
+    .news-container {
+        position: static;
+        display: inline-table;
+        width: 100%;
+    }
+    .district-news-photo-container {
+        height: 225px;
+        width: 100%;
+    }
+    .district-news-photo {
+        height: 225px;
+        width: 100%;
+    }
+    .news-descriptions {
+        margin-left: 0;
+        margin-bottom: 20px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 450px) {
+    #district-news-container {
+        width: 363px;
+    }
+    #news-icon {
+        height: 30px;
+        width: 30px;
+    }
+    #district-news-container h1 {
+        font-size: 1.3em;
+    }
+    #district-news-container-side-container {
+        width: 360px;
+        margin-left: 0;
+    }
+    .read-more-news {
+        position: static;
+        display: table;
+    }
+    .date-author {
+        position: static;
+        display:table;
+    }
+}
+/*---------------------- END District News Section ------------*/
+
+/*---------------------- Announcements Section ------------------*/
+#announcements-section {
+    background-color: #d6eaf8;
+    padding-bottom: 60px;
+}
+#announcements-section h2 {
+    padding: 50px 0;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+#announcements-container {
+    width: 100%;
+    text-align: center;
+}
+.announcement {
+    display: inline-block;
+    height: 540px;
+    width: 335px;
+    margin-left: 80px;
+    text-align: left;
+    background-color: #FFF;
+}
+.announcements-img {
+    height: auto;
+    width: 100%;
+}
+.announcement h3 {
+    color: #2466a0;
+    font-size: 18px;
+    font-family: 'Proza Libre', sans-serif;
+    margin: 30px 0px 25px 0px;
+}
+.announcement p {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.announcement-more-info {
+    font-size: 15px;
+    line-height: 70px;
+    text-decoration: none;
+    color: #0015ff;
+    font-weight: bold;
+}
+.announcement-more-info:hover {
+    border-bottom: 1.5px solid;
+}
+@media screen and (max-width: 1025px) {
+    #announcements-section h2 {
+        padding: 5px;
+    }
+    .announcement {
+        margin-top: 15px;
+        margin-left: 18px;
+        height: 500px;
+        width: 280px;
+    }
+}
+@media screen and (max-width: 775px) {
+    .announcement {
+        height: 400px;
+        width: 224px;
+    }
+    .announcement p {
+        font-size: 12px;
+    }
+    .announcement-more-info {
+        font-size: 15px;
+        line-height: 10px;
+    }
+}
+@media screen and (max-width: 740px) {
+    .announcement {
+        position: static;
+        display: block;
+        margin: 10px auto;
+    }
+}
+@media screen and (max-width: 450px) {
+    #announcements-section h2 {
+        padding: 0;
+        margin: 0;
+    }
+    .announcement h3 {
+        font-size: 10.4px;
+    }
+}
+/*---------------------- END Announcements Section --------------*/
+
+/*---------------------- Campuses Section ------------------*/
+#campuses-section {
+    margin: 60px 0px;
+    width: 100%;
+}
+#campuses-section h1 {
+    font-size: 28px;
+    font-family: 'Josefin', sans-serif;
+    text-align: center;
+}
+#campuses-container {
+    text-align: center;
+}
+.campus {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 7px solid black;
+    margin: 15px;
+}
+.campus img {
+    height: 99.7%;
+    width: 99.7%;
+}
+.campus figcaption {
+    margin-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+@media screen and (max-width: 1255px) {
+    #campuses-section {
+        margin: 0px 0px 15px;
+    }
+    .campus {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 1025px) {
+    .campus {
+        width: 180px;
+        height: 200px;
+        margin-top: 10px;
+    }
+    .campus-img-caption {
+    }
+}
+@media screen and (max-width: 420px) {
+    #campuses-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+/*---------------------- END Campuses Section --------------*/
+
+/*---------------------- Footer Section ------------------*/
+footer {
+    height: 240px;
+    color: white;
+    background-color: #0000cc;
+}
+#school-logo {
+    height: 126px;
+    width: auto;
+    margin-top: 55px;
+    margin-right: 10px;
+    margin-left: 150px;
+}
+#contact-info-container {
+    display: inline-block;
+}
+#contact-info-container h3, p{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+}
+#share-page-container {
+    float: right;
+    margin-top: 55px;
+    margin-right: 150px;
+}
+#share-page-container h3 {
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+#share-page-container input {
+    height: 50px;
+    width: 50px;
+    margin: 8px 15px 0px 0px;
+    border-radius: 25%;
+}
+@media screen and (max-width: 900px) {
+    footer {
+        height: 100%;
+        text-align: center;
+    }
+    #school-logo {
+        margin: 10px 10px 0px 0px;
+    }
+    #contact-info-container {
+        display: block;
+    }
+    #share-page-container {
+        float: none;
+        margin: 25px 0px 0px 0px;
+    }
+}
+/*---------------------- END Footer Section --------------*/
