@@ -97,15 +97,16 @@ body {
     overflow: hidden;
 }
 #navigation-container {
-    margin-top: 50px;
+    position: relative;
     float: right;
+    top: 50px;
 }
 #navigation-container a {
-    margin: 0 10px;
+    margin: 0 5px;
     text-decoration: none;
     font-family: 'PT Sans Caption', sans-serif;
     color: #FFF;
-    font-size: 19px;
+    font-size: 16px;
 }
 #navigation-container a:hover {
     transition: 0.1s;
@@ -115,6 +116,11 @@ body {
 @media screen and (max-width: 1683px) {
     #navigation-container {
         margin-top: 0;
+    }
+}
+@media screen and (max-width: 1422px) {
+    #navigation-container {
+        position: static;
     }
 }
 @media screen and (max-width: 480px) {
@@ -668,3 +674,4 @@ footer {
     }
 }
 /*---------------------- END Footer Section --------------*/
+
