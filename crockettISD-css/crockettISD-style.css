@@ -59,18 +59,6 @@ body {
     background-color: #012b9e;
     border-bottom: 3px solid #ff653a;
 }
- /* Display drop down menu and remove navigation tab*/
-@media screen and (max-width: 1216px){
-    #drop-menu-section {
-        display: block;
-    }
-    #header-section {
-        text-align: center;
-    }
-    #navigation-container {
-        display: none;
-    }
-}
 /*-------------------- END Drop Menu Section ------------*/
 
 /*-------------------- Header Section -------------------*/
@@ -112,25 +100,6 @@ body {
     transition: 0.1s;
     padding-bottom: 5px;
     border-bottom: 2px solid orange;
-}
-@media screen and (max-width: 1683px) {
-    #navigation-container {
-        margin-top: 0;
-    }
-}
-@media screen and (max-width: 1422px) {
-    #navigation-container {
-        position: static;
-    }
-}
-@media screen and (max-width: 480px) {
-    #header-section img {
-        margin: 0;
-    }
-    #header-section p {
-        position: static;
-        display: block;
-    }
 }
 /*-------------------- END Header Section ---------------*/
 
@@ -183,22 +152,6 @@ body {
 @keyframes opacity-animation {
     0% { opacity: 0; }
     100% { opacity: 1; }
-}
-@media screen and (max-width: 1000px) {
-    #left-button {
-        display: none;
-    }
-    #right-button {
-        display: none;
-    }
-    #sliders-section {
-        margin-top: 7px;
-        width: 95vw;
-        height: 48vw;
-    }
-    .caption { 
-        font-size: 1em;
-    }
 }
 /*-------------------- END Slideshow Section ---------------*/
 
@@ -256,32 +209,6 @@ body {
     font-weight: bold;
     color: black;
     margin-top: 6px;
-}
-@media screen and (max-width: 770px) {
-    .explore-icon-container {
-        height: 200px;
-        width: 140px;
-        margin-right: 6px;
-        margin-right: 0px;
-    }
-    .explore-icon-employee {
-        height: 200px;
-        width: 140px;
-    }
-    .icon-caption {
-        font-size: 0.8em;
-    }
-}
-@media screen and (max-width: 705px){
-    #left-arrow-explore {
-        display: none;
-    }
-    #right-arrow-explore {
-        display: none;
-    }
-    #explore-slider-super-container {
-        width: 98%;
-    }
 }
 /*-------------------- END Explore Section -----------*/
 
@@ -403,78 +330,6 @@ body {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-@media screen and (max-width: 1025px) {
-    #district-news-container {
-        width: 100%;
-        margin: 0;
-    }
-}
-@media screen and (max-width: 840px) {
-    .news-container {
-        position: static;
-        display: inline-table;
-        width: 100%;
-    }
-    .news-descriptions {
-        margin-left: 0;
-        margin-bottom: 20px;
-        position: relative;
-        bottom: 0;
-        width: 100%;
-    }
-}
-@media screen and (max-width: 769px) {
-    #district-news-container {
-        width: 600px;
-    }
-    #district-news-container h1{
-        margin: 0;
-    }
-    .news-container {
-        position: static;
-        display: inline-table;
-        width: 100%;
-    }
-    .district-news-photo-container {
-        height: 225px;
-        width: 100%;
-    }
-    .district-news-photo {
-        height: 225px;
-        width: 100%;
-    }
-    .news-descriptions {
-        margin-left: 0;
-        margin-bottom: 20px;
-        position: relative;
-        bottom: 0;
-        width: 100%;
-    }
-}
-@media screen and (max-width: 450px) {
-    #district-news-container {
-        width: 363px;
-    }
-    #news-icon {
-        height: 30px;
-        width: 30px;
-    }
-    #district-news-container h1 {
-        font-size: 1.3em;
-    }
-    #district-news-container-side-container {
-        width: 360px;
-        margin-left: 0;
-    }
-    .read-more-news {
-        position: static;
-        display: table;
-    }
-    .date-author {
-        position: static;
-        display:table;
-    }
-}
 /*---------------------- END District News Section ------------*/
 
 /*---------------------- Announcements Section ------------------*/
@@ -524,46 +379,6 @@ body {
 .announcement-more-info:hover {
     border-bottom: 1.5px solid;
 }
-@media screen and (max-width: 1025px) {
-    #announcements-section h2 {
-        padding: 5px;
-    }
-    .announcement {
-        margin-top: 15px;
-        margin-left: 18px;
-        height: 500px;
-        width: 280px;
-    }
-}
-@media screen and (max-width: 775px) {
-    .announcement {
-        height: 400px;
-        width: 224px;
-    }
-    .announcement p {
-        font-size: 12px;
-    }
-    .announcement-more-info {
-        font-size: 15px;
-        line-height: 10px;
-    }
-}
-@media screen and (max-width: 740px) {
-    .announcement {
-        position: static;
-        display: block;
-        margin: 10px auto;
-    }
-}
-@media screen and (max-width: 450px) {
-    #announcements-section h2 {
-        padding: 0;
-        margin: 0;
-    }
-    .announcement h3 {
-        font-size: 10.4px;
-    }
-}
 /*---------------------- END Announcements Section --------------*/
 
 /*---------------------- Campuses Section ------------------*/
@@ -596,29 +411,6 @@ body {
     font-size: 16px;
     color: black;
 }
-@media screen and (max-width: 1255px) {
-    #campuses-section {
-        margin: 0px 0px 15px;
-    }
-    .campus {
-        margin: 0;
-    }
-}
-@media screen and (max-width: 1025px) {
-    .campus {
-        width: 180px;
-        height: 200px;
-        margin-top: 10px;
-    }
-    .campus-img-caption {
-    }
-}
-@media screen and (max-width: 420px) {
-    #campuses-container {
-        width: 80%;
-        margin: 0 auto;
-    }
-}
 /*---------------------- END Campuses Section --------------*/
 
 /*---------------------- Footer Section ------------------*/
@@ -637,7 +429,7 @@ footer {
 #contact-info-container {
     display: inline-block;
 }
-#contact-info-container h3, p{
+#contact-info-container p{
     font-family: 'Ubuntu', sans-serif;
     font-weight: bolder;
     font-size: 18px;
@@ -657,20 +449,139 @@ footer {
     margin: 8px 15px 0px 0px;
     border-radius: 25%;
 }
-@media screen and (max-width: 900px) {
-    footer {
-        height: 100%;
-        text-align: center;
+/*---------------------- END Footer Section --------------*/
+
+
+/*------------------------ 1119px Width -------------------*/
+@media screen and (max-width: 1119px) {
+    #navigation-container {
+        display: none;
     }
-    #school-logo {
-        margin: 10px 10px 0px 0px;
-    }
-    #contact-info-container {
+    
+    #drop-menu-section {
         display: block;
     }
+    
+    #bars-container {
+        height: 43px;
+    }
+    
+    
+    #header-section {
+        text-align: center;
+    }
+    #header-section img {
+        margin: 15px 30px 12px 0;
+    }
+    #header-section p {
+        margin: 0;
+    }
+    
+    
+    #sliders-section {
+        height: 28vw;
+        width: 80vw;
+    }
+    .caption {
+        margin: 0;
+        font-size: 16px;
+    }
+    
+    
+    #explore-section {
+        margin: 10px 0 0 0;
+    }
+    #left-arrow-explore, #right-arrow-explore {
+        height: 50px;
+    }
+    #explore-slider-super-container {
+        margin: 0;
+    }
+    .explore-icon-container {
+        margin: 0 50px 0 0;
+        width: 130px; 
+    }
+    .icon-caption {
+        font-size: 12px;
+    }
+    
+    
+    #district-news-container {
+        margin: 0;
+    }
+    #news-icon {
+        height: 35px;
+    }
+    #district-news-container h1 {
+        font-size: 28px;
+    }
+    .news-container {
+        border-bottom: dashed black;
+        border-bottom-width: 1.5px;
+    }
+    .news-descriptions h3 {
+        font-size: 14px;
+    }
+    .news-descriptions p, .read-more-news {
+        font-size: 12px;
+    }
+    #district-news-container-side-container {
+        margin: 0;
+        width: 90%;
+        text-align: center;
+    }
+    #district-news-container-side-container h5 {
+        font-size: 16px;
+    }
+    #district-news-container-side-container p {
+        font-size: 14px;
+    }
+    
+    
+    #announcements-section h2 {
+        padding: 20px 0;
+        font-size: 30px;
+    }
+    .announcement {
+        margin: 0 20px 0 0;
+        width: 280px;
+        height: 450px;
+    }
+    .announcement h3 {
+        font-size: 16px;
+    }
+    .announcement p, .announcement-more-info {
+        font-size: 12px;
+    }
+    
+    
+    #campuses-section {
+        margin: 20px 0 15px 0;
+    }
+    #campuses-section h1 {
+        font-size: 24px;
+    }
+    .campus {
+        height: 100px;
+        width: 140px;
+        border: 4px solid black;
+    }
+    .campus figcaption {
+        font-size: 12px;
+    }
+    
+    
+    #school-logo {
+        margin: 55px 10px 0 50px;
+    }
+    #contact-info-container{
+        position: relative;
+        bottom: 15px;
+    }
     #share-page-container {
-        float: none;
-        margin: 25px 0px 0px 0px;
+        margin: 55px 100px 0 0;
+    }
+    #share-page-container h3 {
+        font-size: 20px;
     }
 }
-/*---------------------- END Footer Section --------------*/
