@@ -1,0 +1,13 @@
+Link
+font-family: 'Open Sans', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+
+Captions
+font-family: 'Source Sans Pro', sans-serif;
+
+Title
+font-family: 'Heebo', sans-serif;
+font-family: 'Fira Sans', sans-serif;
+
+Paragraph
+font-family: 'Raleway', sans-serif;

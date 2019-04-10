@@ -1,0 +1,681 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix {
+    overflow: auto;
+}
+body {
+}
+.readMoreArticleLink:hover, .announcementMoreInfoLink:hover, .campusesContainers a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+
+#droppedNavContainer {
+    display: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+button {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+
+header {
+    background-color: #1B1464;
+}
+#crockettISDLogo {
+    width: 145px;
+    margin: 10px 0 10px 45px;
+}
+nav {
+    float: right;
+    margin-top: 60px;
+}
+nav a {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+nav a:hover {
+    padding-bottom: 5px;
+    border-bottom: 1.4px solid orange;
+}
+#firstNavLink {
+    margin-left: 0;
+}
+#lastNavLink {
+    margin-right: 30px;
+}
+
+
+#slideshowSection {
+    position: relative;
+    width: 100%;
+    background-color: #010314;
+}
+#leftButton, #rightButton {
+    position: absolute;
+    font-size: 45px;
+    top: 40%;
+    color: #F4FBFF;
+}
+#leftButton:hover, #rightButton:hover {
+    transition: color 0.5s;
+    color: #0295EC;
+}
+#rightButton {
+    right: 5%;
+}
+#leftButton {
+    left: 5%;
+}
+.slides {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: none;
+    animation-name: slidesOpacityAnimation;
+    animation-duration: 3s;
+}
+@keyframes slidesOpacityAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+#firstSlide {
+    display: block;
+}
+.slides img {
+    width: 100%;
+    height: 400px;
+    margin-top: 12px;
+}
+.slideshowCaptions {
+    display: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    width: 95%;
+    margin: 10px auto 10px;
+    font-size: 1.2em;
+}
+#firstCaption {
+    display: block;
+}
+
+
+#exploreSection {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    position: relative;
+}
+#leftExploreSectionButton, #rightExploreSectionButton {
+    position: absolute;
+    font-size: 35px;
+    top: 42%;
+}
+#leftExploreSectionButton {
+    left: 1.8%;
+}
+#rightExploreSectionButton {
+    right: 1.8%;
+}
+#figuresParentContainer {
+    width: 90%;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+#figuresContainer {
+    width: 1700px;
+    transition: transform 1s ease;
+}
+#bullyingFigure {
+    margin-left: 0  ;
+}
+.exploreSectionFigures {
+    width: 130px;
+    display: inline-block;
+    background-color: #969696;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    border-radius: 10px;
+    margin-left: 35px;
+}
+.exploreSectionFigures img {
+    height: 90px;
+    margin-top: 4px;
+}
+.exploreSectionFigures figcaption a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.roundExploreIconWhiteBackground {
+    background-color: white;
+    border-radius: 100px;
+    width: 104px;
+    margin: 0 auto 10px;
+}
+
+
+#newsAndMottoSection {
+    overflow: auto;
+}
+#districtAndCampusNewsSection {
+    float: left;
+    margin-top: 5%;
+    margin-left: 2%;
+    width: 60%;
+}
+#newsIcon, #districtAndCampusNewsHeading {
+    float: left;
+}
+#districtAndCampusNewsHeading {
+    margin-left: 1%;
+    width: 88%;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    color: #15648f;
+    position: relative;
+}
+.newsSectionContainers {
+    margin-top: 30px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 30px;
+}
+.newsSectionImage {
+    float: left;
+    height: 100px;
+    width: 26%;
+}
+.newsArticleContainer {
+    display: inline-block;
+    position: relative;
+    width: 72%;
+    margin-left: 1%;
+}
+.newsArticleTitle {
+    font-family: 'Heebo', sans-serif;
+    margin-bottom: 12px;
+}
+.newsArticleDescription {
+    margin-bottom: 28px;
+    font-family: 'Raleway', sans-serif;
+}
+.dateAndArticleAuthor {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+
+#mottoMissionGoalsSection {
+    margin-top: 5%;
+    float: right;
+    margin-left: .5%;
+    margin-right: 1%;
+    width: 36.5%;
+    text-align: center;
+}
+#mottoContainer, #missionContainer {
+    margin-bottom: 20px;
+}
+#mottoContainer, #missionContainer, #goalsSection {
+    padding-top: 10px;
+    background-color: #0a3d62;
+    border-radius: 10px;
+}
+#mottoMissionGoalsSection h3 {
+    color: #e8ca50;
+    font-size: 22px;
+    font-family: 'Heebo', sans-serif;
+    margin-bottom: 10px;
+}
+#mottoMissionGoalsSection p{
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+
+#announcementsSection {
+    text-align: center;
+    background-color: #2d3436;
+    padding-bottom: 15px;
+}
+#announcementsSection h1 {
+    padding-top: 15px;
+    color: aliceblue;
+    text-align: center;
+    margin: 20px 0px 30px 0px;
+    font-size: 2em;
+    font-family: 'Fira Sans', sans-serif;
+}
+#firstAnnouncement {
+    margin: 0;
+}
+.announcementsContainer {
+    width: 280px;
+    height: 400px;
+    margin-left: 40px;
+    position: relative;
+    display: inline-block;
+    background-color: #bdc3c7;
+}
+.announcementsImage {
+    width: 100%;
+    height: 120px;
+}
+.announcementTitles {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.4em;
+    margin: 10px 0 10px 0;
+}
+.announcementDescription {
+    margin-top: 20px;
+    font-family: 'Karla', sans-serif;
+    text-align: left;
+}
+.announcementMoreInfoLink {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#campusesSection {
+    text-align: center;
+    background-color: #2d3436;
+    padding-bottom: 15px;
+}
+#campusesSection h1 {
+    margin-bottom: 10px;
+    font-family: 'Heebo', sans-serif;
+    color: aliceblue;
+}
+.campusesContainers {
+    width: 19.6%;
+    border: 5.2px solid black;
+    display: inline-block;
+    background-color: #57606f;
+}
+.campusesContainers img {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 10px;
+}
+.campusesContainers figcaption {
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+.campusesContainers figcaption a {
+    color: aliceblue;
+}
+
+
+footer {
+    position: relative;
+    background-color: #1B1464;
+    color: aliceblue;
+    height: 180px;
+}
+#logoContactInfoContainer {
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+#logoFooter {
+    width: 130px;
+    height: 130px;
+}
+#contactInfo {
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+    margin-left: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+#sharePageContainer {
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+#sharePageContainer {
+    font-size: 1.4em;
+    font-family: 'Fira Sans', sans-serif;
+}
+#sharePageContainer i {
+    font-size: 40px;
+    margin-right: 15px;
+}
+#sharePageContainer i:hover {
+    color: #7f8c8d;
+    cursor: pointer;
+}
+
+/*----------------------------------------------------------------*/
+@media screen and (max-width: 946px) {
+    #districtAndCampusNewsSection, #mottoMissionGoalsSection {
+        float: none;
+        width: 95%;
+        margin: 0px auto;
+    }
+}
+@media screen and (max-width: 1240px) {
+    #crockettISDLogo {
+        margin: 10px 0px 10px 10px;
+    }
+    nav a:hover {
+        padding-bottom: 5px;
+        background-color: #0538DE;
+        border: none;
+    }
+}
+@media screen and (max-width: 1195px) {
+    #crockettISDLogo { 
+        width: 125px;
+    }
+}
+@media screen and (max-width: 1160px) {
+    nav a {
+        margin-left: 10px;
+    }
+    
+    .slides {
+        width: 90%;
+    }
+    #leftButton {
+        left: 0;
+    }
+    #rightButton {
+        right: 0;
+    }
+    
+    
+    nav {
+        margin: 0;
+        display: none;
+    }
+    
+    #droppedNavContainer {
+        display: block;
+        background-color: #0D0B61;
+        width: 100%;
+    }
+    #barsButton {
+        font-size: 30px;
+        background-color: inherit;
+        border: none;
+        color: white;
+        float: right;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    #droppedNav {
+        clear: both;
+        float: none;
+        display: block;
+        overflow: hidden;
+        transition: height 1s;
+        height: 0px;
+    }
+    #droppedNav a, #firstNavLink {
+        display: block;
+        text-align: left;
+        margin: 0;
+        padding: 13px;
+    }
+    
+    
+    header {
+        text-align: center;
+    }
+    #crockettISDLogo {
+        margin: 10px 0 10px 0;
+    }
+}
+@media screen and (max-width: 1071px) {
+    #leftButton, #rightButton {
+        top: 35%;
+    }
+}
+@media screen and (max-width: 930px) {
+    .slides {
+        width: 85%;
+    }
+    .slides img {
+        height: 300px;
+    }
+    .slideshowCaptions {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 651px) {
+    #leftButton, #rightButton {
+        display: none;
+    }
+    .slides {
+        width: 97%;
+    }
+    .slides img {
+        height: 250px;
+    }
+    .slideshowCaptions {
+        font-size: 0.9em;
+    }
+    
+    
+    #leftExploreSectionButton, #rightExploreSectionButton {
+        display: none;
+    }
+}
+@media screen and (max-width: 371px) {
+    .slides {
+        width: 100%;
+    }
+    .slides img {
+        height: 180px;
+        margin-top: 5px;
+    }
+    .slideshowCaptions {
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 604px) {
+    #barsButton {
+        font-size: 1.7em;
+    }
+    #droppedNav a {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+    
+    
+    #crockettISDLogo {
+        width: 110px;
+    }
+    
+    
+    .slides img {
+        height: 180px;
+    }
+    .slideshowCaptions {
+        text-align: center;
+        margin: 8px auto;
+        width: 100%;
+    }
+    
+    
+    #exploreSection {
+        margin-top: 10px;
+    }
+    #figuresParentContainer {
+        width: 97%;
+    }
+    .exploreSectionFigures {
+        width: 100px;
+    }
+    .roundExploreIconWhiteBackground {
+        border-radius: 0px;
+        width: 99%;
+    }
+    #figuresContainer img {
+        width: 75px;
+        height: 70px;
+    }
+    .exploreSectionFigures figcaption {
+        font-size: 0.88em;
+    }
+    
+    
+    #newsIcon {
+        margin-top: 4px;
+        width: 35px;
+    }
+    #districtAndCampusNewsHeading {
+        font-size: 30px;
+    }
+    
+    .newsSectionContainers {
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    .newsArticleTitle {
+        font-size: 1em;
+    }
+    .newsArticleDescription {
+        font-size: 0.8em;
+    }
+    .readMoreArticleLink, .dateAndArticleAuthor {
+        font-size: 0.8em;
+    }
+    
+    
+    #mottoMissionGoalsSection h3 {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
+    #mottoMissionGoalsSection p{
+        width: 97%;
+        font-size: 0.9em;
+        padding-bottom: 8px;
+    }
+}
+@media screen and (max-width: 458px) {
+    .exploreSectionFigures {
+        margin-left: 15px;
+    }
+    
+    
+    #newsIcon {
+        width: 30px;
+    }
+    #districtAndCampusNewsHeading {
+        margin-top: 5px;
+        font-size: 1.2em;
+    }
+    .newsArticleTitle {
+        font-size: 0.8em;
+    }
+    .newsArticleDescription {
+        font-size: 0.6em;
+        margin-bottom: 10px;
+    }
+    .readMoreArticleLink, .dateAndArticleAuthor {
+        font-size: 0.6em;
+    }
+}
+
+
+@media screen and (max-width: 947px) {
+    .announcementsContainer {
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 886px) {
+    #announcementsSection h1 {
+        font-size: 1.5em;
+    }
+    .announcementsContainer {
+        width: 230px;
+    }
+    .announcementTitles {
+        font-size: 1.1em;
+    }
+    .announcementDescription, .announcementMoreInfoLink {
+        font-size: 0.9em;
+    }
+}
+@media screen and (max-width: 736px) {
+    .announcementsContainer, #firstAnnouncement {
+        margin: 10px auto;
+        display: block;
+        width: 320px;
+    }
+}
+@media screen and (max-width: 381px) {
+    .announcementsContainer, #firstAnnouncement {
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-width: 818px) {
+    .campusesContainers {
+        width: 30%;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 592px) {
+    .campusesContainers {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 341px) {
+    .campusesContainers {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 620px) {
+    footer {
+        height: 100%;
+        text-align: center;
+    }
+    #logoContactInfoContainer {
+        position: static;
+        display: block;
+        padding-top: 20px;
+        margin: 0;
+    }
+    #logoFooter {
+        height: 100px;
+        width: 100px;
+    }
+    #contactInfo {
+        top: -12px;
+        font-size: 0.85em;
+    }
+    #sharePageContainer {
+        position: static;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    #sharePageContainer h3 {
+        font-size: 1em;
+    }
+    #sharePageContainer i {
+        font-size: 1.5em;
+    }
+}
